@@ -134,7 +134,7 @@
     var filter = filterSelect.value;
 
     //-------------------------------------------------------------------
-    // test case 002 and 003
+    // test case TC-002 and TC-003
     return tasks.filter(function (t) {
       var statusOk = filter === "All" || t.status === filter;
       //removed(filter === "In Progress" && t.status === "Pending");
@@ -328,7 +328,7 @@
     } else if (button.getAttribute("data-action") === "delete") {
       if (filterSelect.value !== "All") {
         //--------------------------------------------------------------
-        //test case 001
+        //test case TC-001
         tasks = tasks.filter(function (t) {
           return t.id !== task.id;
         });
